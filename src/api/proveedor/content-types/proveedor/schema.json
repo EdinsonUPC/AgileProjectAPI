@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedors",
+  "info": {
+    "singularName": "proveedor",
+    "pluralName": "proveedors",
+    "displayName": "Proveedor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nroDocIde": {
+      "type": "string"
+    },
+    "razonSocial": {
+      "type": "string"
+    },
+    "orden_compras": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::orden-compra.orden-compra"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insumos",
+  "info": {
+    "singularName": "insumo",
+    "pluralName": "insumos",
+    "displayName": "Insumo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "stock": {
+      "type": "float"
+    }
+  }
+}

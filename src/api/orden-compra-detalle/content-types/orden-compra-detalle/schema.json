@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orden_compra_detalles",
+  "info": {
+    "singularName": "orden-compra-detalle",
+    "pluralName": "orden-compra-detalles",
+    "displayName": "OrdenCompraDetalle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cantidad": {
+      "type": "decimal"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "insumo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::insumo.insumo"
+    }
+  }
+}

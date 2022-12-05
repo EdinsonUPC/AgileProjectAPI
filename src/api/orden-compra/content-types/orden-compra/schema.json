@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orden_compras",
+  "info": {
+    "singularName": "orden-compra",
+    "pluralName": "orden-compras",
+    "displayName": "OrdenCompra",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "serie_correlativo": {
+      "type": "string"
+    },
+    "proveedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proveedor.proveedor"
+    },
+    "orden_compra_detalles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::orden-compra-detalle.orden-compra-detalle"
+    },
+    "fecha_emision": {
+      "type": "date"
+    }
+  }
+}
